@@ -1,5 +1,9 @@
 package codingdojo;
 
+import codingdojo.model.Customer;
+import codingdojo.model.ShoppingList;
+import codingdojo.repository.CustomerDataLayer;
+
 import java.util.*;
 
 /**

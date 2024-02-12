@@ -1,5 +1,7 @@
 package codingdojo;
 
+import codingdojo.exception.ConflictException;
+import codingdojo.model.*;
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -295,6 +297,7 @@ public class CustomerSyncTest {
         ExternalCustomer externalCustomer = new ExternalCustomer();
         externalCustomer.setExternalId("12345");
         externalCustomer.setName("Joe Bloggs");
+        externalCustomer.setBonusPointsBalance(100);
         externalCustomer.setAddress(new Address("123 main st", "Stockholm", "SE-123 45"));
         externalCustomer.setPreferredStore("Nordstan");
         externalCustomer.setShoppingLists(Arrays.asList(new ShoppingList("lipstick", "foundation")));
